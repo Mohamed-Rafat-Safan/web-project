@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+	    <title> Cars for Sale </title>
+        <style>
+            * {margin: 0px; padding: 0;}
+            
+       
+            ul { 
+                list-style-type: none ;
+                overflow: hidden ;
+                padding-left:650px;
+                background-color: rgb(22, 3, 39);
+           
+              }
+            li {float: left;}
+           #a a {
+                  display: block; 
+                  position: relative ;
+                  right: 80px;
+                  color: white ;
+                  text-decoration: none;
+                  padding: 20px;
+                  font-family:Arial, Helvetica, sans-serif;
+               }
+           #a a:hover {background-color: rgba(191, 180, 204, 0.8);}
+           #p p{border: 1px solid white;
+                border-radius: 5px ; 
+                padding: 5px 7px 22px 7px ;
+                text-decoration: none;
+                height: 1px; 
+                margin:13px 0px 0px 0px ;
+                } 
+            li p:hover{ background-color:rgb(247, 239, 239,0.5) ;}
+           
+            #logo{position: absolute;
+            left: 10px;
+            top: 10px;
+            width: 100px; padding-top: 1px;}
+           #text{color: white ; font-size: 40px; padding:50px 80px }
+         
+         
+     .search{
+              background-color:rgb(100, 42, 112);
+              font-family: Arial;
+              height: 50px;
+              padding:28px 0px 0px 30px ;
+             }
+
+          
+            #row {background-color: #DDD;height: 400px;padding: 5px; font-family: Arial;}
+            #col {background-color: white;width: 20%;height: 300px;float: left;margin: 30px 35px 20px 15px ;position: relative;left: 35px;;}
+            #col a:hover{color: black;}
+
+            .buy{height: 1450px;
+                 text-align: center;
+                 padding-top: 50px;
+                 font-family: Arial;
+                 font-size: 20px;
+                }
+             
+             td a{ font-size: 15px;text-decoration: none; color: rgb(60, 107, 194);}
+             td a:hover{color: rgb(99, 10, 84);}
+
+             .volvo{
+                    background-color: rgb(255, 255, 255);
+                    height: 550px; 
+                    font-family: Arial ;
+                    font-size: 20px;
+                    padding: 30px;
+                    
+                   }
+
+            #used_car{
+                      text-decoration: none;
+                      padding: 15px;
+                      line-height: 20px;
+                      color: rgb(77, 129, 228);
+                      }      
+            #used_car:hover{color: rgb(50, 9, 88);}        
+
+
+        .grid-container {
+            font-family: Arial, Helvetica, sans-serif;
+                        display: grid;
+                        grid-gap: 5px 5px;
+                        grid-template-columns: auto auto auto;
+                        background-color: #DDD;
+                        padding: 20px;
+                        padding-left: 50px;
+                        height: 950px;
+                        }
+
+          .grid-item {
+                    background-color: white;
+                    font-size: 30px;
+                    text-align: center;
+                    width: 400px;
+                    height:450px;
+                    }
+        
+        footer {background-color: rgb(53, 23, 92);width: 100%;height: 400px;}
+        footer .fcol{width: 50%;height: 400px; background-color: rgb(53, 23, 92);float: left;text-align: center;}
+        footer .fdiv{width: 33.33%;height: 400px;float: left;background-color: rgb(53, 23, 92);}
+        footer .fdiv a{text-decoration: none;}
+
+
+                 
+        </style>
+
+    </head>
+
+    <body>
+        <div><a href="file:///C:/Users/hP/Desktop/web%20project/Cars.com.html"><img src="logo.png" title="cars.com" id="logo"></a></div>
+
+        <div>
+            <ul>
+                <li id="a"><a href="file:///C:/Users/hP/Desktop/web%20project/Cars.com.html">Home</a></li>
+                <li id="a"><a href="file:///C:/Users/hP/Desktop/web%20project/cars%20for%20sale.html">Cars for Sale</a></li>
+                <li id="a"><a href="file:///C:/Users/hP/Desktop/web%20project/sell%20your%20car.html">Sall Your Car</a></li>
+                <li id="a"><a href="file:///C:/Users/hP/Desktop/web%20project/researh.html">Research</a></li>
+                <li id="a"><a href="file:///C:/Users/hP/Desktop/web%20project/Contact%20Us.html#">Contact Us</a></li>
+                <li id="p">
+                     <p><a href="file:///C:/Users/hP/Desktop/web%20project/sing%20up.html" title="Login or Sign Up" style="text-decoration: none;color: white;font-family:Arial;">Sign Up</a></p>
+                </li>
+              </ul>              
+        </div>
+
+        <div style="background-image: url(car.png) ;background-repeat: no-repeat; width: 100%;height: 430px;font-family:Arial;">
+            <p id="text">Shop Cars for Sale<br>
+                Find the right price, dealer and<br> advice.</p>
+        </div>
+       
+
+       <div class="search">
+            <form>
+                Find New & Used Cars for Sale search here :
+                <input type="search" placeholder=" search here for cars" style="width: 250px; height: 30px;">
+                <button onclick="window.alert('this the car is found in the search')" >search</button>
+            </form>
+       </div>
+       
+       <div id="row">
+           <p style="text-align: center;padding-top: 15px; font-size: 25px;">Popular Searches Near You</p>
+        <div id="col">
+            <p style="text-align: center;padding-top: 15px; font-size: 20px;">Used Ford F-150s</p>
+           <a href="#car1" style="text-decoration: none;"><p style="text-decoration: none; font-size: 15px; text-align: center;">See all near you ></p>
+             <img src="car1.png" alt="car1" width="250px"></a>
+        </div>
+        <div id="col">
+            <p style="text-align: center;padding-top: 15px; font-size: 20px;">Used Dodge Challengers</p>
+            <a href="#car2" style="text-decoration: none;"> <p style="text-decoration: none; font-size: 15px; text-align: center;">See all near you ></p> 
+              <img src="car2.png" alt="car2" width="250px"></a>
+        </div>
+        <div id="col">
+            <p style="text-align: center;padding-top: 15px; font-size: 20px;">Used Jeep Wranglers</p>
+            <a href="#car3" style="text-decoration: none;"> <p style="text-decoration: none; font-size: 15px; text-align: center;">See all near you > </p> 
+              <img src="car3.png" alt="car3" width="250px"></a>
+        </div>
+        <div id="col">
+            <p style="text-align: center;padding-top: 15px; font-size: 20px;">Electric Cars</p>
+            <a href="#car4" style="text-decoration: none;"> <p style="font-size: 15px;text-align: center;">See all near you > </p> 
+              <img src="car4.png" alt="car4" width="250px"></a>
+        </div>
+    </div>
+
+    <div class="buy">
+        <h2>Buy a Car Online and Have it Delivered</h2><br>
+        <p style="font-size: 15px;">Now featuring nearly 2 million cars ready for home delivery.</p><br>
+        <img src="home-shopping-badge.png" alt="home-shopping-badge" width="150px"><br><br>
+        <img src="car_shopping.png" alt="car_shopping" width="400"> <br><br>
+        <button style="width: 150px; height: 40px; background-color: rgb(165, 54, 122);color: white; border-radius: 5px;">Shop for Cars</button><br><br>
+        <p style="font-size: 15px;">Get advice on<a href="https://www.cars.com/coronavirus/" style="text-decoration: none;color: rgb(119, 13, 119);"> shopping for a car during COVID</a></p>
+        <br><br><p style="font-size: 20px;"><b>Bodystyle Search</b></p>
+         <br>
+        <table style="width: 90%; height: 150px;">
+            <tr style="font-size: 10;  font-weight: bold;">
+                <td>Coupes & Sedans</td>
+                <td>Pickup Trucks</td>
+                <td>Vans & Minivans</td>
+                <td>SUVs & Crossovers</td>
+            </tr>
+            <tr>
+                <td><a href="#1">Sedan</a></td>
+                <td><a href="#2">Regular Cab Pickup</a></td>
+                <td><a href="#3">Minivan</a></td>
+                <td><a href="#4">SUV</a></td>
+            </tr>
+            <tr>
+                <td><a href="#1">Convertible</a></td>
+                <td><a href="#2">Crew Cab Pickup</a></td>
+                <td><a href="#3">Cargo Van</a></td>
+                <td><a href="#4">Wagon</a></td>
+            </tr>
+            <tr>
+                <td><a href="#1">Coupe</a></td>
+                <td><a href="#2">Extended Cab Pickup</a></td>
+                <td><a href="#3">Passenger Van</a></td>
+                <td><a href="#4">Hatchback</a></td>
+            </tr>
+        </table> <br><br>
+        <hr style=" width: 85% ; margin-left: 100px;">  <br>
+         
+        <p style="font-size: 20px;"><b>Brand Search</b></p>
+        <br>
+        <table width="90%" height="500px">
+            <tr>
+                <td><a href="#1">Acura</a></td>
+                <td><a href="#2">Alfa Romeo</a></td>
+                <td><a href="#3">Am General</a></td>
+                <td><a href="#4">Aston Martin</a></td>
+            </tr>
+            <tr>
+                <td><a href="#1">Audi</a></td>
+                <td><a href="#2">Bentley</a></td>
+                <td><a href="#3">BMW</a></td>
+                <td><a href="#4">Buick</a></td>
+            </tr>
+            <tr>
+                <td><a href="#1">Cadillac</a></td>
+                <td><a href="#2">Chevrolet</a></td>
+                <td><a href="#3">Chrysler</a></td>
+                <td><a href="#4">Datsun</a></td>
+            </tr>
+            <tr>
+                <td><a href="#1">Dodge</a></td>
+                <td><a href="#2">Ferrari</a></td>
+                <td><a href="#3">FIAT</a></td>
+                <td><a href="#4">Fisker</a></td>
+            </tr>
+            <tr>
+                <td><a href="#1">Ford</a></td>
+                <td><a href="#2">Genesis</a></td>
+                <td><a href="#3">GMC</a></td>
+                <td><a href="#4">Honda</a></td>
+            </tr>
+            <tr>
+                <td><a href="#1">Hummer</a></td>
+                <td><a href="#2">Hyundai</a></td>
+                <td><a href="#3">INFINITI</a></td>
+                <td><a href="#4">International</a></td>
+            </tr>
+            <tr>
+                <td><a href="#1">Isuzu</a></td>
+                <td><a href="#2">Jaguar</a></td>
+                <td><a href="#3">Jeep</a></td>
+                <td><a href="#4">Karma</a></td>
+            </tr>
+            <tr>
+                <td><a href="#1">Kia</a></td>
+                <td><a href="#2">Lamborghini</a></td>
+                <td><a href="#3">Land Rover</a></td>
+                <td><a href="#4">Lexus</a></td>
+            </tr>
+            <tr>
+                <td><a href="#1">Lincoln</a></td>
+                <td><a href="#2">Lotus</a></td>
+                <td><a href="#3">Maserati</a></td>
+                <td><a href="#4">Mazda</a></td>
+            </tr>
+            <tr>
+                <td><a href="#1">McLaren</a></td>
+                <td><a href="#2">Mercedes-Benz</a></td>
+                <td><a href="#3">Mercury</a></td>
+                <td><a href="#4">MG</a></td>
+            </tr>
+            <tr>
+                <td><a href="#1">MINI</a></td>
+                <td><a href="#2">Mitsubishi</a></td>
+                <td><a href="#3">Nissan</a></td>
+                <td><a href="#4">Oldsmobile</a></td>
+            </tr>
+            <tr>
+                <td><a href="#1">Plymouth</a></td>
+                <td><a href="#2">Pontiac</a></td>
+                <td><a href="#3">Porsche</a></td>
+                <td><a href="#4">RAM</a></td>
+            </tr>
+            <tr>
+                <td><a href="#1">Rolls-Royce</a></td>
+                <td><a href="#2">Saab</a></td>
+                <td><a href="#3">Saturn</a></td>
+                <td><a href="#4">Scion</a></td>
+            </tr>
+            <tr>
+                <td><a href="#1">smart</a></td>
+                <td><a href="#2">Subaru</a></td>
+                <td><a href="#3">Suzuki</a></td>
+                <td><a href="#4">Tesla</a></td>
+            </tr>
+            <tr>
+                <td><a href="#1">Toyota</a></td>
+                <td><a href="#2">Volkswagen</a></td>
+                <td><a href="#3">Volvo</a></td>
+            </tr>
+    
+        </table> <br><br>
+         
+    </div>
+    
+        <div class="volvo">
+              <p style="color: blueviolet;"><b>Cars Volvo 2019 & 2020 :</b></p>
+            <img src="volvo1.png" alt="volvo" style="width: 110px ;position: relative; left: 750px; top: 0px;">
+            <img src="volvo2.png" alt="volvo" style="width: 110px ;position: relative; left: 850px; top: 0px;">
+            <img src="volvo3.png" alt="volvo" style="width: 110px ;position: relative; left: 950px; top: 0px;">
+            
+            <p style="color: blueviolet;"><b>2019 Volvo V60: First Look — Cars.com : </b></p><br>
+            <video controls poster="volvo_poster.png" style="width: 55%;height: 400px; ;position: relative;left: 300px ;border-color: white; border-radius: 10px;">
+                <source src="car_volvo.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+        </div>  <br> <br>
+       <hr style="width: 80%; margin-left: 150px;"> <br><br>
+
+        <div style="height: 560px; font-family: Arial; padding-left: 300px; ">
+            <p style="text-align: center; font-size: 25px; padding-bottom: 35px; padding-right: 300px;"><b>Used-Car Financing & Warranty FAQs</b></p>
+            <p><b>Financing & Lease</b></p>
+            <a id="used_car" href="#car1"><p>Can you lease a used car?</p></a>
+            <a id="used_car" href="#car2"><p>How do I finance a used car?</p></a>
+            <a id="used_car" href="#car3"><p>Are loan rates higher for used cars?</p></a>
+            <a id="used_car" href="#car4"><p>How do I know if I can afford the payments?</p></a>
+            <p><b>Warranty</b></p>
+            <a id="used_car" href="#car1"><p>Are extended warranties worth the money?</p></a>
+            <a id="used_car" href="#car2"><p>What warranty comes with a used car?</p></a>
+            <a id="used_car" href="#car3"><p>What is a bumper-to-bumper warranty and what does it cover?</p></a>
+            <p><b>Certified Used Cars</b></p>
+            <a id="used_car" href="#car1"><p>What does CPO mean?</p></a>
+            <a id="used_car" href="#car2"><p>Shop and Learn CPO ></p></a>
+        </div>
+         
+        <div style=" font-family: Arial; background-color: #DDD;">
+            <p style="text-align: center; font-size: 30px; color: rgb(66, 60, 60); padding-top: 35px;"><b>Tips for Buying a Used Car</b></p>
+            <p style="text-align: center;color: rgb(129, 123, 123); padding-top: 10px;">Useful used-car advice from Cars.com experts to help you shop smart.</p>
+        </div>
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="a.png" alt="image1" width="400px">
+                <p style=" padding: 15px; font-size: 20px;"><b>First-Time Buyers: New, Used or <br>Certified Pre-Owned?</b></p>
+                <p style="font-size: 15px;">If the 1.8 million used vehicles on Cars.com didn’t tip you off, that’s quite the haystack. 
+                    Which needles should you look for? Cars.com reviewers, a crew well-versed in used-car purchases, 
+                    name their favorites from the past dozen years.
+                </p>
+            </div>
+            <div class="grid-item">
+                <img src="b.png" alt="image1" width="400px">
+                <p style=" padding: 15px; font-size: 20px;"><b>Is a Used Car a Good Idea?</b></p>
+                <p style="font-size: 15px;">CARS.COM — As the price of new cars has climbed, used cars have become more popular than ever. 
+                    They’re also more expensive than ever, inflation aside. But thanks to engineering strides,
+                     vehicles have never been more durable and maintenance-free, and previously owned vehicles are no less a value.
+                </p>
+            </div>
+            <div class="grid-item">
+                <img src="c.png" alt="image1" width="400px">
+                <p style=" padding: 15px; font-size: 20px;"><b>Making Sense of Used-Car Warranties</b></p>
+                <p style="font-size: 15px;">CARS.COM — Used cars tend to have fewer warranty options than their brand-new counterparts, 
+                    but the policies can be just as daunting to understand. For one, they rarely mirror a new car’s powertrain,
+                     bumper-to-bumper or accessory policy. Instead, they can be a mixed bag of coverage.
+                </p>
+            </div>  
+            <div class="grid-item">
+                <img src="d.png" alt="image1" width="400px">
+                <p style=" padding: 15px; font-size: 20px;"><b>9 Fine Choices for Used-Car Shoppers</b></p>
+                <p style="font-size: 15px;">That new-car smell doesn’t come cheap: The average new vehicle transacts for about $32,000, per J.D. Power and Associates. 
+                    That’s about half the median U.S. household income these days, so it’s no surprise a lot more shoppers buy used instead.
+                     Auto auction company Manheim notes that some 40 million used cars are sold each year — well over double the number of new cars that change hands.
+                </p>
+            </div>
+            <div class="grid-item">
+                <img src="e.png" alt="image1" width="400px">
+                <p style=" padding: 15px; font-size: 20px;"><b>How to Inspect a Used Car</b></p>
+                <p style="font-size: 15px;">
+                    CARS.COM — Much of the test drive should happen before you actually drive.
+                    It’s tempting to hop in the car and take it for a spin,
+                     but it’s wise to inspect the car carefully before and after the drive to determine its condition and attempt to confirm the answers the seller gave you before you arrived.
+                </p>
+            </div>
+            <div class="grid-item">
+                <img src="f.png" alt="image1" width="400px">
+                <p style=" padding: 15px; font-size: 20px;"><b>Used-Car-Buyer's Checklist</b></p>
+                <p style="font-size: 15px;">As a potential used-car buyer, there’s a lot to consider before handing over your hard-earned cash.
+                     We’ve created this step-by-step checklist to help get you on your way to buying a used car that best fits your life.
+                </p>
+            </div>  
+        </div>
+
+        <div style="height: 850px; background-color: white; font-family: Arial; padding: 20px; padding-left: 50px;">
+            <p style=" padding: 15px; font-size: 25px;"><b>How to Inspect a Used Car:</b></p> <br>
+            <video width="70%" height="505px" poster="video.png" controls style="float: left ; padding-right: 15px;">
+                <source src="How to Inspect a Used Car.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video> <br> <br>
+              <p style="font-size: 25px; line-height: 35px;">
+                <b>Related: Is a Used Car a Good Idea?</b> <br>
+                  Remember that a used car’s current condition and the way it was cared for are at least as important as the style,
+                  features and fit when it was new. When you’re done with this test drive, you may not know for sure if the car is mechanically sound without the help of a mechanic,
+                  but you may know if it’s definitely not — and be able to rule it out without paying up to $100 for a professional used-car inspection to tell you so.
+                  You’re also looking for smaller problems that may help you reduce the price.
+                  Wear clothing you don’t mind getting dirty, bring a flashlight, a flat refrigerator magnet and always, always inspect cars in daylight. You can do this while the seller (or salesperson, 
+                  if it’s at a dealership) looks on, or ask for a few minutes alone with the vehicle if you need to conduct your inspection in private. <br>
+                  <b>Rust Can’t Hide :</b><br>
+                  Despite advances in manufacturing, rust remains one of a greatest enemies on a used car — one you should be able to detect on your own.
+                 Rust is generally more damaging to a car’s appearance and value than to its ability to get you where you need to go.
+                 It’s expensive to repair well on any vehicle and nearly impossible to reverse.
+              </p>
+        </div>
+        
+        <div style=" background-color: white; padding: 50px ; font-family: Arial ">
+            <p style="border: 5px double #DDD; padding: 40px;font-size: 25px ; text-align: center ; color: rgb(163, 10, 163);"><b>Partner Marketplace</b></p> <br> <br> <br>
+            <p style="text-align: center;"><b>Popular New Cars for Sale</b></p> <br>
+            <table  cellspacing="20px" style="font-size: 15px; width: 100%; color: rgb(78, 74, 74);">
+                <tr>
+                    <td>2020 RAM 1500 For Sale</td>
+                    <td> 2018 Ford F-150 For Sale</td>
+                    <td>2020 Jeep Wrangler Unlimited For Sale</td>
+                    <td> 2019 Ford F-150 For Sale</td>
+                </tr>
+                <tr>
+                    <td>2020 Jeep Grand Cherokee For Sale</td>
+                    <td> 2020 Ford Explorer For Sale</td>
+                    <td> 2019 Chevrolet Silverado 1500 For Sale</td>
+                    <td>2019 RAM 1500 For Sale</td>
+                </tr>
+                <tr>
+                    <td>2020 GMC Sierra 1500 For Sale</td>
+                    <td> 2020 Ford F-150 For Sale</td>
+                    <td> 2020 Toyota Tacoma For Sale</td>
+                    <td> 2020 Chevrolet Silverado 1500 For Sale</td>
+                </tr>
+            </table> <br> <br>
+
+            <p style="text-align: center;"><b>Popular Used Cars for Sale</b></p> <br>
+            <table  cellspacing="20px" style="font-size: 15px; width: 100%; color: rgb(78, 74, 74);">
+                <tr>
+                    <td>2016 Dodge Challenger For Sale</td>
+                    <td> 2016 Jeep Wrangler Unlimited For Sale</td>
+                    <td> 2016 Cadillac Escalade For Sale</td>
+                    <td> 2015 Chevrolet Silverado 1500 For Sale</td>
+                </tr>
+                <tr>
+                    <td>2016 Ford F-150 For Sale</td>
+                    <td> 2016 Chevrolet Tahoe For Sale</td>
+                    <td> 2015 Ford F-150 For Sale</td>
+                    <td> 2015 Jeep Wrangler Unlimited For Sale</td>
+                </tr>
+                <tr>
+                    <td>2014 Ford F-150 For Sale</td>
+                    <td> 2016 Chevrolet Silverado 1500 For Sale</td>
+                    <td> 2014 Chevrolet Silverado 1500 For Sale</td>
+                    <td> 2013 Ford F-150 For Sale</td>
+                </tr>
+            </table> <br> <br>
+
+            <p style="text-align: center;"><b>Cars by Popular City</b></p> <br>
+            <table  cellspacing="20px" style="font-size: 15px; width: 100%; color: rgb(78, 74, 74);">
+                <tr>
+                    <td>Atlanta, GA</td>
+                    <td> Chicago, IL</td>
+                    <td>Columbus, OH</td>
+                    <td> Dallas, TX</td>
+                </tr>
+                <tr>
+                    <td>Denver, CO</td>
+                    <td> Houston, TX</td>
+                    <td> Los Angeles, CA</td>
+                    <td> New York, NY</td>
+                </tr>
+                <tr>
+                    <td>Philadelphia, PA</td>
+                    <td> Phoenix, AZ</td>
+                    <td>San Diego, CA</td>
+                    <td> Seattle, WA</td>
+                </tr>
+            </table>
+        </div>
+
+        <footer>
+            <div class="fcol">
+                <div class="fdiv">
+                    <br><br><a href="#home"><h5 style="color: white;">Our Company</h5></a><p style="color: rgb(158, 157, 157);text-align: left;padding-left: 80px;">
+                    <br><br>About Cars.com
+                    <br><br>Investor Relations
+                    <br><br>Contact Cars.com
+                    <br><br>Mobile Apps
+                    <br><br>Site Map
+                    <br><br>Careers
+                    <br><br>Fraud Awareness
+                    <br><br>Licensing & Reprints</p>
+                </div>
+                <div class="fdiv">
+                    <br><br><a href="sell your car.html"><h5 style="color: white;">Buying & Selling</h5></a><p style="color: rgb(158, 157, 157);text-align: left;padding-left: 80px;"> 
+                    <br><br>Find a Car
+                    <br><br>Certified Pre-Owned
+                    <br><br>Sell Your Car
+                    <br><br>Car Book Values
+                    <br><br>Car Dealers
+                    <br><br>Compare Car Prices
+                    <br><br>Listings by City
+                    <br><br>Advertisers</p>
+                </div>
+                <div class="fdiv">
+                    <br><br><a href="#Research"><h5 style="color: white;">Our Partners</h5></a><p style="color: rgb(158, 157, 157);text-align: left;padding-left: 85px;">
+                    <br><br>Auto.com
+                    <br><br>NewCars.com</p>
+                </div>
+            </div>
+            
+            <div class="fcol">
+                <a href="https://www.facebook.com/" target="black"><img src="fac.png" style="width: 40px;height: 40;margin: 20px 5px;"></a>
+                <a href="https://www.Twitter.com/" target="black"><img src="twit.png" style="width: 40px;height: 40;margin: 20px 5px;"></a>
+                <a href="https://www.instagram.com/" target="black"><img src="ins.png" style="width: 40px;height: 40;margin: 20px 5px;"></a>
+                <a href="https://eg.linkedin.com/" target="black"><img src="in.png" style="width: 40px;height: 40;margin: 20px 5px;"></a>
+                <a href="https://www.youtube.com/?gl=EG" target="black"><img src="youtube.png" style="width: 40px;height: 40;margin: 20px 5px;"></a>
+                <a href="https://www.google.com/?gl=EG" target="black"><img src="google.png" style="width: 40px;height: 40;margin: 20px 5px;"></a>
+                <a href="https://www.google.com/?gl=EG" target="black"><img src="gps.PNG" style="width: 40px;height: 40;margin: 24px 0px;"></a>
+            </div>
+        </footer>
+
+    
+    </body>
+</html>
